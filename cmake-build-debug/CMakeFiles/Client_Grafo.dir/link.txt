@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Client_Grafo.dir/main.cpp.o CMakeFiles/Client_Grafo.dir/Socket.cpp.o  -o Client_Grafo 
