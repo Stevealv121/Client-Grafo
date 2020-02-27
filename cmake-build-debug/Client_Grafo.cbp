@@ -84,10 +84,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/steve/CLionProjects/Client-Grafo/Socket.cpp">
+		<Unit filename="/home/steve/CLionProjects/Client-Grafo/TcpClient.cpp">
 			<Option target="Client_Grafo"/>
 		</Unit>
-		<Unit filename="/home/steve/CLionProjects/Client-Grafo/Socket.hpp">
+		<Unit filename="/home/steve/CLionProjects/Client-Grafo/TcpClient.hpp">
 			<Option target="Client_Grafo"/>
 		</Unit>
 		<Unit filename="/home/steve/CLionProjects/Client-Grafo/main.cpp">

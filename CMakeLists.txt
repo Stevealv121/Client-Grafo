@@ -3,4 +3,4 @@ project(Client_Grafo)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Client_Grafo main.cpp Socket.cpp Socket.hpp)
+add_executable(Client_Grafo main.cpp TcpClient.cpp TcpClient.hpp)

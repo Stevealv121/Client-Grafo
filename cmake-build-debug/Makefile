@@ -123,32 +123,32 @@ Client_Grafo/fast:
 	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/build
 .PHONY : Client_Grafo/fast
 
-Socket.o: Socket.cpp.o
+TcpClient.o: TcpClient.cpp.o
 
-.PHONY : Socket.o
+.PHONY : TcpClient.o
 
 # target to build an object file
-Socket.cpp.o:
-	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/Socket.cpp.o
-.PHONY : Socket.cpp.o
+TcpClient.cpp.o:
+	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/TcpClient.cpp.o
+.PHONY : TcpClient.cpp.o
 
-Socket.i: Socket.cpp.i
+TcpClient.i: TcpClient.cpp.i
 
-.PHONY : Socket.i
+.PHONY : TcpClient.i
 
 # target to preprocess a source file
-Socket.cpp.i:
-	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/Socket.cpp.i
-.PHONY : Socket.cpp.i
+TcpClient.cpp.i:
+	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/TcpClient.cpp.i
+.PHONY : TcpClient.cpp.i
 
-Socket.s: Socket.cpp.s
+TcpClient.s: TcpClient.cpp.s
 
-.PHONY : Socket.s
+.PHONY : TcpClient.s
 
 # target to generate assembly for a file
-Socket.cpp.s:
-	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/Socket.cpp.s
-.PHONY : Socket.cpp.s
+TcpClient.cpp.s:
+	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/TcpClient.cpp.s
+.PHONY : TcpClient.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Client_Grafo"
-	@echo "... Socket.o"
-	@echo "... Socket.i"
-	@echo "... Socket.s"
+	@echo "... TcpClient.o"
+	@echo "... TcpClient.i"
+	@echo "... TcpClient.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
