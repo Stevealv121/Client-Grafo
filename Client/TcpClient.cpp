@@ -37,7 +37,7 @@ void TcpClient::run() {
             getline(cin, userInput);
 
             //		Send to server
-            int sendRes = static_cast<int>(send(sending, userInput.c_str(), userInput.size() + 1, 0));
+            int sendRes = static_cast<int>(send(sending, userInput.c_str(), userInput.size(), 0));
             if (sendRes == -1)
             {
                 cout << "Could not send to server! Whoops!\r\n";
@@ -55,7 +55,7 @@ void TcpClient::run() {
             else
             {
                 //		Display response
-                cout << "SERVER> " << string(buf, static_cast<unsigned long>(bytesReceived)) << "\r\n";
+                cout << "SERVER> " << endl<<string(buf, static_cast<unsigned long>(bytesReceived)) << "\r\n";
             }
 
         }while(true);
@@ -67,13 +67,12 @@ void TcpClient::run() {
 
 }
 
-void TcpClient::sendMessage() {
+void TcpClient::sendMessage(int socket, string msg) {
+
+    send(socket, msg.c_str(), msg.size(), 0);
 
 }
 
-void TcpClient::receive() {
-
-}
 
 int TcpClient::createSocket() {
 
@@ -96,7 +95,6 @@ int TcpClient::connectToServer(int socket) {
 
     //	Connect to the server on the socket
     int connectRes = connect(socket, (sockaddr*)&hint, sizeof(hint));
-    //int connectRes = connect(socket, NULL, NULL);
     if (connectRes == -1)
     {
         cerr<<"Can't connect to server"<<endl;

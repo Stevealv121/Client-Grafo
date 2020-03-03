@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/steve/CLionProjects/Client-Grafo/TcpClient.cpp
+/home/steve/CLionProjects/Client-Grafo/Client/TcpClient.cpp
 TcpClient.hpp
-/home/steve/CLionProjects/Client-Grafo/TcpClient.hpp
+/home/steve/CLionProjects/Client-Grafo/Client/TcpClient.hpp
 
-/home/steve/CLionProjects/Client-Grafo/TcpClient.hpp
+/home/steve/CLionProjects/Client-Grafo/Client/TcpClient.hpp
 iostream
 -
 sys/types.h

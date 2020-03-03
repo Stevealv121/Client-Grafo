@@ -15,27 +15,46 @@
 #define CLIENT_GRAFO_SOCKET_HPP
 
 using namespace std;
+/**
+ *Client class implementation
+ */
 class TcpClient {
 
 public:
-
+    /**
+     * Constructor client
+     * @param port number
+     * @param ipAddress number
+     */
     TcpClient(int port, string ipAddress);
     ~TcpClient();
-    //main loop
+    /**
+     * main loop
+     */
     void run();
-    //send
-    void sendMessage();
-    //receive
-    void receive();
+    //send msg
+    void sendMessage(int socket, string msg);
 
 private:
-
+    /**
+     * port to connect
+     */
     int m_port;
+    /**
+     * ip Address
+     */
     string m_ipAddress;
 
-    //create socket
+    /**
+     * Create socket
+     * @return socket
+     */
     int createSocket();
-    //connect to server
+    /**
+     * connect to server socket
+     * @param socket server
+     * @return socket
+     */
     int connectToServer(int socket);
 
 };
