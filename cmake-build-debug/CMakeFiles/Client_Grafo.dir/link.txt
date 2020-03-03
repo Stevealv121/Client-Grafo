@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Client_Grafo.dir/main.cpp.o CMakeFiles/Client_Grafo.dir/TcpClient.cpp.o  -o Client_Grafo 
+/usr/bin/c++  -g   CMakeFiles/Client_Grafo.dir/main.cpp.o CMakeFiles/Client_Grafo.dir/Client/TcpClient.cpp.o CMakeFiles/Client_Grafo.dir/Client/SimpleGUI.cpp.o  -o Client_Grafo 

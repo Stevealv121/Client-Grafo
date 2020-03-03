@@ -123,32 +123,59 @@ Client_Grafo/fast:
 	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/build
 .PHONY : Client_Grafo/fast
 
-TcpClient.o: TcpClient.cpp.o
+Client/SimpleGUI.o: Client/SimpleGUI.cpp.o
 
-.PHONY : TcpClient.o
+.PHONY : Client/SimpleGUI.o
 
 # target to build an object file
-TcpClient.cpp.o:
-	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/TcpClient.cpp.o
-.PHONY : TcpClient.cpp.o
+Client/SimpleGUI.cpp.o:
+	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/Client/SimpleGUI.cpp.o
+.PHONY : Client/SimpleGUI.cpp.o
 
-TcpClient.i: TcpClient.cpp.i
+Client/SimpleGUI.i: Client/SimpleGUI.cpp.i
 
-.PHONY : TcpClient.i
+.PHONY : Client/SimpleGUI.i
 
 # target to preprocess a source file
-TcpClient.cpp.i:
-	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/TcpClient.cpp.i
-.PHONY : TcpClient.cpp.i
+Client/SimpleGUI.cpp.i:
+	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/Client/SimpleGUI.cpp.i
+.PHONY : Client/SimpleGUI.cpp.i
 
-TcpClient.s: TcpClient.cpp.s
+Client/SimpleGUI.s: Client/SimpleGUI.cpp.s
 
-.PHONY : TcpClient.s
+.PHONY : Client/SimpleGUI.s
 
 # target to generate assembly for a file
-TcpClient.cpp.s:
-	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/TcpClient.cpp.s
-.PHONY : TcpClient.cpp.s
+Client/SimpleGUI.cpp.s:
+	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/Client/SimpleGUI.cpp.s
+.PHONY : Client/SimpleGUI.cpp.s
+
+Client/TcpClient.o: Client/TcpClient.cpp.o
+
+.PHONY : Client/TcpClient.o
+
+# target to build an object file
+Client/TcpClient.cpp.o:
+	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/Client/TcpClient.cpp.o
+.PHONY : Client/TcpClient.cpp.o
+
+Client/TcpClient.i: Client/TcpClient.cpp.i
+
+.PHONY : Client/TcpClient.i
+
+# target to preprocess a source file
+Client/TcpClient.cpp.i:
+	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/Client/TcpClient.cpp.i
+.PHONY : Client/TcpClient.cpp.i
+
+Client/TcpClient.s: Client/TcpClient.cpp.s
+
+.PHONY : Client/TcpClient.s
+
+# target to generate assembly for a file
+Client/TcpClient.cpp.s:
+	$(MAKE) -f CMakeFiles/Client_Grafo.dir/build.make CMakeFiles/Client_Grafo.dir/Client/TcpClient.cpp.s
+.PHONY : Client/TcpClient.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Client_Grafo"
-	@echo "... TcpClient.o"
-	@echo "... TcpClient.i"
-	@echo "... TcpClient.s"
+	@echo "... Client/SimpleGUI.o"
+	@echo "... Client/SimpleGUI.i"
+	@echo "... Client/SimpleGUI.s"
+	@echo "... Client/TcpClient.o"
+	@echo "... Client/TcpClient.i"
+	@echo "... Client/TcpClient.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

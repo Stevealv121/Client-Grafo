@@ -8,9 +8,7 @@ TcpClient::TcpClient(int port, string ipAddress) :m_port(port), m_ipAddress(ipAd
 
 }
 
-TcpClient::~TcpClient() {
-
-}
+TcpClient::~TcpClient() = default;
 
 void TcpClient::run() {
 
@@ -39,7 +37,7 @@ void TcpClient::run() {
             getline(cin, userInput);
 
             //		Send to server
-            int sendRes = send(sending, userInput.c_str(), userInput.size() + 1, 0);
+            int sendRes = static_cast<int>(send(sending, userInput.c_str(), userInput.size() + 1, 0));
             if (sendRes == -1)
             {
                 cout << "Could not send to server! Whoops!\r\n";
@@ -48,7 +46,7 @@ void TcpClient::run() {
 
             //		Wait for response
             memset(buf, 0, 4096);
-            int bytesReceived = recv(sending, buf, 4096, 0);
+            int bytesReceived = static_cast<int>(recv(sending, buf, 4096, 0));
             if (bytesReceived == -1)
             {
                 cout << "There was an error getting response from server\r\n";
@@ -57,16 +55,14 @@ void TcpClient::run() {
             else
             {
                 //		Display response
-                cout << "SERVER> " << string(buf, bytesReceived) << "\r\n";
+                cout << "SERVER> " << string(buf, static_cast<unsigned long>(bytesReceived)) << "\r\n";
             }
 
         }while(true);
 
         close(sending);
 
-
     }
-
 
 
 }
@@ -93,9 +89,9 @@ int TcpClient::createSocket() {
 int TcpClient::connectToServer(int socket) {
 
     //	Create a hint structure for the server we're connecting with
-    sockaddr_in hint;
+    sockaddr_in hint{};
     hint.sin_family = AF_INET;
-    hint.sin_port = htons(m_port);
+    hint.sin_port = htons(static_cast<uint16_t>(m_port));
     inet_pton(AF_INET, m_ipAddress.c_str(), &hint.sin_addr);
 
     //	Connect to the server on the socket
@@ -103,10 +99,10 @@ int TcpClient::connectToServer(int socket) {
     //int connectRes = connect(socket, NULL, NULL);
     if (connectRes == -1)
     {
-        //cerr<<"Can't connect to server"<<endl;
+        cerr<<"Can't connect to server"<<endl;
         return 1;
     }
-    //cout<<"connected to server"<<endl;
+    cout<<"connected to server"<<endl;
     return 0;
 
 }

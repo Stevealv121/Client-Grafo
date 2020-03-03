@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/steve/CLionProjects/Client-Grafo/TcpClient.cpp
+TcpClient.hpp
+/home/steve/CLionProjects/Client-Grafo/TcpClient.hpp
+
 /home/steve/CLionProjects/Client-Grafo/TcpClient.hpp
 iostream
 -
@@ -23,10 +27,4 @@ string.h
 -
 string
 -
-
-/home/steve/CLionProjects/Client-Grafo/main.cpp
-iostream
--
-TcpClient.hpp
-/home/steve/CLionProjects/Client-Grafo/TcpClient.hpp
 

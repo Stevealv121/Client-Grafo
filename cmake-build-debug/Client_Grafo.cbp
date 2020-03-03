@@ -84,10 +84,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/steve/CLionProjects/Client-Grafo/TcpClient.cpp">
+		<Unit filename="/home/steve/CLionProjects/Client-Grafo/Client/SimpleGUI.cpp">
 			<Option target="Client_Grafo"/>
 		</Unit>
-		<Unit filename="/home/steve/CLionProjects/Client-Grafo/TcpClient.hpp">
+		<Unit filename="/home/steve/CLionProjects/Client-Grafo/Client/SimpleGUI.hpp">
+			<Option target="Client_Grafo"/>
+		</Unit>
+		<Unit filename="/home/steve/CLionProjects/Client-Grafo/Client/TcpClient.cpp">
+			<Option target="Client_Grafo"/>
+		</Unit>
+		<Unit filename="/home/steve/CLionProjects/Client-Grafo/Client/TcpClient.hpp">
 			<Option target="Client_Grafo"/>
 		</Unit>
 		<Unit filename="/home/steve/CLionProjects/Client-Grafo/main.cpp">
